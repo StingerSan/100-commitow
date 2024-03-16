@@ -1,5 +1,5 @@
-const express = require("express");
-const dotenv = require("dotenv");
+import express from "express";
+import * as dotenv from "dotenv";
 dotenv.config();
 const app = express();
 
@@ -19,6 +19,6 @@ const getWeatherData = async () => {
 };
 getWeatherData();
 
-app.listen(3000, "localhost", () => {
-  console.log("lisening on  http://localhost:3000");
+app.listen(3001, "localhost", () => {
+  console.log("lisening on  http://localhost:3001");
 });
