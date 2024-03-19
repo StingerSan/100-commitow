@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from "react";
+import { FormEvent, useState } from "react";
 
 export const SearchCity = () => {
   const [search, setSearch] = useState("");
@@ -16,14 +16,16 @@ export const SearchCity = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          onChange={(event) => setSearch(event.target.value)}
-        />
-        <button>Search</button>
-      </form>
-    </div>
+    <>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            onChange={(event) => setSearch(event.target.value)}
+          />
+          <button>Search</button>
+        </form>
+      </div>
+    </>
   );
 };

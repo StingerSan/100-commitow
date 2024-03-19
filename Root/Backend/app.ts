@@ -32,5 +32,5 @@ app.get("/", async (req, res) => {
 });
 
 app.listen(3001, "localhost", () => {
-  console.log("lisening on  http://localhost:3001");
+  console.log("listening on  http://localhost:3001");
 });
